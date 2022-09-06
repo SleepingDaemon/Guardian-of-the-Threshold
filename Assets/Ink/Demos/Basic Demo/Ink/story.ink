@@ -1,4 +1,6 @@
-- I looked at Monsieur Fogg 
+- I looked at Monsieur Fogg #Door_Open
+*   Open the door please
+    Okay the door is opening #Door_Open
 *   ... and I could contain myself no longer.
     'What is the purpose of our journey, Monsieur?'
     'A wager,' he replied.

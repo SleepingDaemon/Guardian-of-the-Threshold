@@ -46,6 +46,7 @@ public class DialogController : MonoBehaviour
         while (_story.canContinue)
         {
             storyTextBuilder.AppendLine(_story.Continue());
+            HandleTags();
         }
 
         _storyText.SetText(storyTextBuilder);
@@ -54,6 +55,19 @@ public class DialogController : MonoBehaviour
             ToggleCanvasOff();
         else
             ShowChoiceButtons();
+    }
+
+    private void HandleTags()
+    {
+        foreach (var tag in _story.currentTags)
+        {
+            if (tag == "Door_Open") OpenDoor();
+        }
+    }
+
+    private void OpenDoor()
+    {
+        print("Door is open");
     }
 
     private void ShowChoiceButtons()
