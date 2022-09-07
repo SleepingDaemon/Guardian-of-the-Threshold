@@ -13,3 +13,17 @@ public class DialogGiver : MonoBehaviour
         }
     }
 }
+
+//public class AlertGiver : MonoBehaviour
+//{
+//    [SerializeField] private string _alertMessage;
+
+//    private void OnTriggerEnter(Collider other)
+//    {
+//        if (other.GetComponent<TopDownMover>() != null)
+//        {
+//            var dialog = FindObjectOfType<DialogController>();
+//            dialog.StartDialog(_alertMessage);
+//        }
+//    }
+//}
