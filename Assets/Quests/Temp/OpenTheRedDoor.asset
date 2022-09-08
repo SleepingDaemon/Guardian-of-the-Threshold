@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c6428c7576e734e990736d50c70637, type: 3}
   m_Name: OpenTheRedDoor
   m_EditorClassIdentifier: 
-  _name: Open the Red Door
+  _displayName: Open the Red Door
   _description: Pass through the Red Door
   _notes: 
-  Steps: []
+  Steps:
+  - _instructions: Talk to the NPC
+    Objectives:
+    - _objectiveType: 0
