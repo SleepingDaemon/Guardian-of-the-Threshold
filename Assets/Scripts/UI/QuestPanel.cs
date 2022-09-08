@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,13 @@ public class QuestPanel : MonoBehaviour
     [SerializeField] private Quest _selectedQuest;
     [SerializeField] private Step _selectedStep;
     [SerializeField] TMP_Text _nameText;
+
+    public void SelectQuest(Quest quest)
+    {
+        _selectedQuest = quest;
+        Bind();
+    }
+
     [SerializeField] TMP_Text _descriptionText;
     [SerializeField] TMP_Text _currentObjectivesText;
     [SerializeField] Image _iconImage;

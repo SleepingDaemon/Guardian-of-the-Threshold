@@ -2403,7 +2403,7 @@ MonoBehaviour:
     m_Left: 0
     m_Right: 0
     m_Top: 0
-    m_Bottom: 0
+    m_Bottom: 5
   m_ChildAlignment: 0
   m_Spacing: 5
   m_ChildForceExpandWidth: 1
@@ -3105,7 +3105,7 @@ GameObject:
   - component: {fileID: 1008202106}
   - component: {fileID: 1008202105}
   m_Layer: 5
-  m_Name: Header Text
+  m_Name: Quest Name Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3663,7 +3663,7 @@ GameObject:
   - component: {fileID: 1230051062}
   - component: {fileID: 1230051061}
   m_Layer: 5
-  m_Name: Body Text
+  m_Name: Quest Details Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6512,10 +6512,10 @@ GameObject:
   - component: {fileID: 1948301275}
   - component: {fileID: 1948301281}
   - component: {fileID: 1948301280}
-  - component: {fileID: 1948301279}
   - component: {fileID: 1948301278}
   - component: {fileID: 1948301277}
   - component: {fileID: 1948301276}
+  - component: {fileID: 1948301282}
   m_Layer: 5
   m_Name: Quest Panel
   m_TagString: Untagged
@@ -6600,24 +6600,6 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
---- !u!114 &1948301279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1948301274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad34cffc93637ab4ea715862b434d44d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _storyText: {fileID: 0}
-  _choiceButtons:
-  - {fileID: 585931700}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &1948301280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6656,6 +6638,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948301274}
   m_CullTransparentMesh: 1
+--- !u!114 &1948301282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948301274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1e4f29b9790c84d990003dfa6bac54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _selectedQuest: {fileID: 11400000, guid: 241d0c793a0fa7d4fb2ef8016f4e32a4, type: 2}
+  _selectedStep:
+    _instructions: 
+    Objectives: []
+  _nameText: {fileID: 1008202106}
+  _descriptionText: {fileID: 1230051062}
+  _currentObjectivesText: {fileID: 299848741}
+  _iconImage: {fileID: 0}
 --- !u!1 &2039757072
 GameObject:
   m_ObjectHideFlags: 0
