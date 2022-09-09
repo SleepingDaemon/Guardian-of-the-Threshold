@@ -1,8 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class ToggleablePanel : MonoBehaviour
 {
     private CanvasGroup _canvasGroup;
+    private static HashSet<ToggleablePanel> _visiblePanels = new HashSet<ToggleablePanel>();
+    public static bool IsVisible => _visiblePanels.Count > 0;
 
     private void Awake()
     {
@@ -10,8 +13,9 @@ public class ToggleablePanel : MonoBehaviour
         Hide();
     }
 
-    protected void Show()
+    public void Show()
     {
+        _visiblePanels.Add(this);
         _canvasGroup.alpha = 1f;
         _canvasGroup.interactable = true;
         _canvasGroup.blocksRaycasts = true;
@@ -19,6 +23,7 @@ public class ToggleablePanel : MonoBehaviour
 
     public void Hide()
     {
+        _visiblePanels.Remove(this);
         _canvasGroup.alpha = 0;
         _canvasGroup.interactable = false;
         _canvasGroup.blocksRaycasts = false;

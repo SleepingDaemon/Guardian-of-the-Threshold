@@ -17,7 +17,6 @@ public class QuestPanel : ToggleablePanel
     {
         _selectedQuest = quest;
         Bind();
-        Show();
     }
 
     [SerializeField] TMP_Text _descriptionText;

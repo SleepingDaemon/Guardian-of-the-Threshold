@@ -11,7 +11,7 @@ It's good to see you again, Gene.
     
 == instructions ==
 - To open the door, you must first meditate deeply in the backroom. #E.ShowBackRoom
-    * Ok, will do. #E.ShowPlayer
+    * Ok, will do. #E.ShowPlayer #Q.OpenTheRedDoor
         I'll see you soon. -> END
     * Why can't I just open the door?
         We are in your astral plane, are we not? It is for you to take action. I am only here to guide you.
