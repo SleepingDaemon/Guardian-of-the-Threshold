@@ -6,6 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Quest")]
 public class Quest : ScriptableObject
 {
+    public event Action Progressed;
+
     [SerializeField] private string _displayName;
     [SerializeField] private string _description;
 
@@ -20,13 +22,22 @@ public class Quest : ScriptableObject
 
     public string DisplayName => _displayName;
 
+    public Step CurrentStep => Steps[_currentStepIndex];
+
+    private void OnEnable()
+    {
+        _currentStepIndex = 0;
+    }
+
     public void TryProgress()
     {
         var currentStep = GetCurrentStep();
         if (currentStep.HasAllObjectivesCompleted())
         {
             _currentStepIndex++;
+            Progressed?.Invoke();
             // do whatever we do when a quest progresses like update UI
+
         }
     }
 
@@ -53,8 +64,19 @@ public class Step
 public class Objective
 {
     [SerializeField] private ObjectiveType _objectiveType;
+    [SerializeField] private GameFlag _gameFlag;
 
-    public bool IsCompleted { get; }
+    public bool IsCompleted
+    {
+        get
+        {
+            switch (_objectiveType)
+            {
+                case ObjectiveType.Flag: return _gameFlag.Value;
+                default: return false;
+            }
+        }
+    }
 
     public enum ObjectiveType
     {
@@ -65,6 +87,10 @@ public class Objective
 
     public override string ToString()
     {
-        return _objectiveType.ToString();
+        switch (_objectiveType)
+        {
+            case ObjectiveType.Flag: return _gameFlag.name;
+            default: return _objectiveType.ToString();
+        }
     }
 }

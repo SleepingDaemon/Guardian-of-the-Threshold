@@ -16,6 +16,11 @@ MonoBehaviour:
   _description: Pass through the Red Door
   _notes: 
   Steps:
-  - _instructions: Talk to the NPC
+  - _instructions: Look at the Control Panel
     Objectives:
     - _objectiveType: 0
+      _gameFlag: {fileID: 11400000, guid: 16f4037959df6454aa7e84fca8b1bcf3, type: 2}
+  - _instructions: Enter the Red Door
+    Objectives:
+    - _objectiveType: 0
+      _gameFlag: {fileID: 11400000, guid: fc6501e79df054f4fa0cc2e0f557831d, type: 2}

@@ -10,26 +10,18 @@ using UnityEngine.UI;
 public class QuestPanel : ToggleablePanel
 {
     [SerializeField] private Quest _selectedQuest;
-    [SerializeField] private Step _selectedStep;
     [SerializeField] TMP_Text _nameText;
-
-    public void SelectQuest(Quest quest)
-    {
-        _selectedQuest = quest;
-        Bind();
-    }
-
     [SerializeField] TMP_Text _descriptionText;
     [SerializeField] TMP_Text _currentObjectivesText;
     [SerializeField] Image _iconImage;
+
+    private Step _selectedStep => _selectedQuest.CurrentStep;
 
     [ContextMenu("Bind")]
     public void Bind()
     {
         _nameText.SetText(_selectedQuest.DisplayName);
         _descriptionText.SetText(_selectedQuest.Description);
-
-        _selectedStep = _selectedQuest.Steps.FirstOrDefault();
 
         DisplayStepInstructionsAndObjectives();
     }
@@ -47,5 +39,16 @@ public class QuestPanel : ToggleablePanel
         }
 
         _currentObjectivesText.SetText(builder.ToString());
+    }
+
+    public void SelectQuest(Quest quest)
+    {
+        if (_selectedQuest)
+            _selectedQuest.Progressed -= DisplayStepInstructionsAndObjectives;
+
+        _selectedQuest = quest;
+        Bind();
+
+        _selectedQuest.Progressed += DisplayStepInstructionsAndObjectives;
     }
 }

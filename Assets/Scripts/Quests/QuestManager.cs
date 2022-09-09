@@ -32,6 +32,7 @@ public class QuestManager : MonoBehaviour
             print($"Missing quest {questName}");
     }
 
+    [ContextMenu("Progress Quests")]
     public void ProgressQuests()
     {
         foreach (var quest in _activeQuests)
