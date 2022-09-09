@@ -31,4 +31,12 @@ public class QuestManager : MonoBehaviour
         else
             print($"Missing quest {questName}");
     }
+
+    public void ProgressQuests()
+    {
+        foreach (var quest in _activeQuests)
+        {
+            quest.TryProgress();
+        }
+    }
 }
