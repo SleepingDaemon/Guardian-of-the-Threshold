@@ -5519,7 +5519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1127044390}
   - component: {fileID: 1127044389}
-  - component: {fileID: 1127044388}
+  - component: {fileID: 1127044391}
   m_Layer: 0
   m_Name: Control Panel Platform (3)
   m_TagString: Untagged
@@ -5527,20 +5527,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1127044388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127044387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7ef68325ae6604da45469a146d9e04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameFlag: {fileID: 11400000, guid: 9acd72f021b124c479df892892f0184e, type: 2}
-  _amount: 1
 --- !u!135 &1127044389
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5571,6 +5557,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1127044391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127044387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63671c00058fc2c459f5cf7b33623ad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameFlag: {fileID: 0}
 --- !u!1 &1192425744
 GameObject:
   m_ObjectHideFlags: 0
@@ -6234,7 +6233,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-24354
+  m_Name: pb_Mesh28024
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9347,7 +9346,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-15318
+  m_Name: pb_Mesh27448
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

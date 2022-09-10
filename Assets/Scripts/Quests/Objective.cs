@@ -7,6 +7,7 @@ public class Objective
     [SerializeField] private ObjectiveType _objectiveType;
     [SerializeField] private GameFlagBase _gameFlag;
     [SerializeField] private int _required;
+    [SerializeField] private string _stringValue;
 
     public GameFlagBase GameFlag => _gameFlag;
 
