@@ -16,16 +16,6 @@ public class QuestManager : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
-    {
-        GameFlag.AnyChange += ProgressQuests;
-    }
-
-    private void OnDestroy()
-    {
-        GameFlag.AnyChange -= ProgressQuests;
-    }
-
     public void AddQuest(Quest quest)
     {
         _activeQuests.Add(quest);
@@ -40,14 +30,5 @@ public class QuestManager : MonoBehaviour
             AddQuest(quest);
         else
             print($"Missing quest {questName}");
-    }
-
-    [ContextMenu("Progress Quests")]
-    public void ProgressQuests()
-    {
-        foreach (var quest in _activeQuests)
-        {
-            quest.TryProgress();
-        }
     }
 }
