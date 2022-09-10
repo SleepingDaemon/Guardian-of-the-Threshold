@@ -16,13 +16,21 @@ MonoBehaviour:
   _description: Pass through the Red Door
   _notes: 
   Steps:
+  - _instructions: Inspect the Control Panel
+    Objectives:
+    - _objectiveType: 0
+      _gameFlag: {fileID: 11400000, guid: 9acd72f021b124c479df892892f0184e, type: 2}
+      _required: 4
   - _instructions: Go look at the Control Panel
     Objectives:
     - _objectiveType: 0
       _gameFlag: {fileID: 11400000, guid: e126f3ab810887c4084362b91f53fcd8, type: 2}
+      _required: 0
     - _objectiveType: 0
       _gameFlag: {fileID: 11400000, guid: 16f4037959df6454aa7e84fca8b1bcf3, type: 2}
+      _required: 0
   - _instructions: Enter the Red Door
     Objectives:
     - _objectiveType: 0
       _gameFlag: {fileID: 11400000, guid: fc6501e79df054f4fa0cc2e0f557831d, type: 2}
+      _required: 0
