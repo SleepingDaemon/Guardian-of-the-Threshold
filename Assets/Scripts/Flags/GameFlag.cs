@@ -4,6 +4,11 @@ using UnityEngine;
 public abstract class GameFlag<T> : GameFlagBase
 {
     public T Value { get; protected set; }
+    public void Set(T value)
+    {
+        Value = value;
+        SendChanged();
+    }
 
     protected void OnDisable()
     {

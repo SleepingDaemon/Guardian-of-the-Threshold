@@ -1,4 +1,4 @@
-It's good to see you again, Gene. #F.BrokenPanelsInspected.9
+It's good to see you again, Gene. #F.AstralGuideName.AstralGuide #F.AstralGuideSpeed.3.5
 *   Likewise, is there anything I can do for you today?
     - Yes, I am glad you asked. Can you open the red door for me? #E.ShowRedDoor
     * Sure, it must be super important if you're asking. How can I open the door? #E.ShowPlayer
