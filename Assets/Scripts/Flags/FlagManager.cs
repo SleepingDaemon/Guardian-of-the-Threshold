@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 
 public class FlagManager : MonoBehaviour
@@ -15,20 +14,7 @@ public class FlagManager : MonoBehaviour
     private void Start() => _flagsByName = _allFlags.ToDictionary(k => k.name.Replace(" ", ""), v => v);
     private void OnValidate()
     {
-        _allFlags = GetAllInstances<GameFlagBase>();
-    }
-
-    public static T[] GetAllInstances<T>() where T : ScriptableObject
-    {
-        string[] guids = AssetDatabase.FindAssets("t:" + typeof(T).Name);
-        T[] a = new T[guids.Length];
-        for (int i = 0; i < guids.Length; i++)
-        {
-            string path = AssetDatabase.GUIDToAssetPath(guids[i]);
-            a[i] = AssetDatabase.LoadAssetAtPath<T>(path);
-        }
-
-        return a;
+        _allFlags = SleepingDaemon.GetAllInstances<GameFlagBase>();
     }
 
     public void Set(string flagName, string value)
