@@ -11,7 +11,11 @@ public class FlagManager : MonoBehaviour
 
     private void Awake() => Instance = this;
 
-    private void Start() => _flagsByName = _allFlags.ToDictionary(k => k.name.Replace(" ", ""), v => v);
+    private void Start()
+    {
+        _flagsByName = _allFlags.ToDictionary(k => k.name.Replace(" ", ""), v => v);
+    }
+
     private void OnValidate()
     {
         _allFlags = SleepingDaemon.GetAllInstances<GameFlagBase>();
