@@ -7,6 +7,7 @@ public abstract class GameFlag<T> : GameFlagBase
     public void Set(T value)
     {
         Value = value;
+        GameFlagData.Value = Value.ToString();
         SendChanged();
     }
 
