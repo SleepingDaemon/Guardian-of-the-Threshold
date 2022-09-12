@@ -3,7 +3,7 @@ using UnityEngine;
 
 public abstract class GameFlag<T> : GameFlagBase
 {
-    public T Value { get; protected set; }
+    public T Value { get; private set; }
     public void Set(T value)
     {
         Value = value;
