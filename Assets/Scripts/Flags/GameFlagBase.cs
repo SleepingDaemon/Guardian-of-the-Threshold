@@ -16,6 +16,27 @@ public abstract class GameFlagBase : ScriptableObject
     protected abstract void SetFromData(string value);
 }
 
+public abstract class GameFlag<T> : GameFlagBase
+{
+    public T Value { get; private set; }
+    public void Set(T value)
+    {
+        Value = value;
+        GameFlagData.Value = Value.ToString();
+        SendChanged();
+    }
+
+    protected void OnDisable()
+    {
+        Value = default;
+    }
+
+    protected void OnEnable()
+    {
+        Value = default;
+    }
+}
+
 [Serializable]
 public class GameFlagData
 {

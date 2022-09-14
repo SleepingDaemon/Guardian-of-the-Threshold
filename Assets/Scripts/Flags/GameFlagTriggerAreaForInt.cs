@@ -7,6 +7,7 @@ public class GameFlagTriggerAreaForInt : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _gameFlag.Modify(_amount);
+        if(other.CompareTag("Player"))
+            _gameFlag.Modify(_amount);
     }
 }
