@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Inspectable : MonoBehaviour
 {
     private static HashSet<Inspectable> _inspectablesInRange = new HashSet<Inspectable>();
     private float _timeInspected;
     [SerializeField] private float _timeToInspect = 3f;
+    [SerializeField] private UnityEvent OnInspectionCompleted;
 
     public static event Action<bool> InspectablesInRangeChanged;
     public static IReadOnlyCollection<Inspectable> InspectablesInRange => _inspectablesInRange;
-
     public float InspectionProgress => _timeInspected / _timeToInspect;
+    public bool WasFullyInspected { get; private set; }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && WasFullyInspected == false)
         {
             _inspectablesInRange.Add(this);
             InspectablesInRangeChanged?.Invoke(true);
@@ -27,8 +29,8 @@ public class Inspectable : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            _inspectablesInRange.Remove(this);
-            InspectablesInRangeChanged?.Invoke(_inspectablesInRange.Any());
+            if(_inspectablesInRange.Remove(this))
+                InspectablesInRangeChanged?.Invoke(_inspectablesInRange.Any());
         }
     }
 
@@ -43,8 +45,9 @@ public class Inspectable : MonoBehaviour
 
     private void CompleteInspection()
     {
+        WasFullyInspected = true;
         _inspectablesInRange.Remove(this);
         InspectablesInRangeChanged?.Invoke(_inspectablesInRange.Any());
-        gameObject.SetActive(false);
+        OnInspectionCompleted?.Invoke();
     }
 }
