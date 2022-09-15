@@ -1,10 +1,12 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InspectionPanel : MonoBehaviour
 {
     [SerializeField] private TMP_Text _hintText;
-    [SerializeField] private TMP_Text _progressText;
+    [SerializeField] private Image _progressBarFilledImage;
+    [SerializeField] private GameObject _progressBar;
 
     private void OnEnable()
     {
@@ -20,7 +22,14 @@ public class InspectionPanel : MonoBehaviour
     private void Update()
     {
         if(InspectionManager.Inspecting)
-            _progressText.SetText(InspectionManager.InspectionProgress.ToString());
+        {
+            _progressBarFilledImage.fillAmount = InspectionManager.InspectionProgress;
+            _progressBar.SetActive(true);
+        }
+        else if (_progressBar.activeSelf)
+        {
+            _progressBar.SetActive(false);
+        }
     }
 
     private void UpdateHintTextState(bool enableHintText)
