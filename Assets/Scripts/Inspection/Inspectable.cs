@@ -12,6 +12,8 @@ public class Inspectable : MonoBehaviour
     public static event Action<bool> InspectablesInRangeChanged;
     public static IReadOnlyCollection<Inspectable> InspectablesInRange => _inspectablesInRange;
 
+    public float InspectionProgress => _timeInspected / _timeToInspect;
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
