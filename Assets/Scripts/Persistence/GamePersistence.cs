@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GamePersistence : MonoBehaviour
 {
-    private GameData _gameData;
+    public GameData _gameData;
 
     private void Start()
     {
@@ -32,5 +32,6 @@ public class GamePersistence : MonoBehaviour
             _gameData = new GameData();
 
         FlagManager.Instance.Bind(_gameData.GameFlagDatas);
+        InspectionManager.Bind(_gameData.InspectableDatas);
     }
 }

@@ -9534,7 +9534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -11445,7 +11445,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: E - Inspect
+  m_text: '[E] - Interact'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfc225eeb2ee3c3489ac263858615834, type: 2}
   m_sharedMaterial: {fileID: 2904156360486856486, guid: bfc225eeb2ee3c3489ac263858615834, type: 2}
