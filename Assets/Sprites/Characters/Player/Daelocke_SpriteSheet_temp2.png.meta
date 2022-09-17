@@ -1,0 +1,1531 @@
+fileFormatVersion: 2
+guid: 7a4f70bed8db5db48b02c43834997467
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b601ab866d061734aafaf5591519bcfd
+      internalID: 165502546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8bf3604c18bab45bdf049e2881c8a1
+      internalID: -425864545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532dcaefd4d88e0438fab2f675051bd3
+      internalID: 366099284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76766ea32947954182c251cbbe774f3
+      internalID: -1475678234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585dbe0a097ab3443ba29999b8dbe95e
+      internalID: -1245972899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041d639a94f9a624086100e9ca4aa4f1
+      internalID: 438753245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_6
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40002b8aad431294b819bde9ca10a292
+      internalID: 1303991509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_7
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b57f7f72256d854fb01d78efdf260db
+      internalID: 703749495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_8
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a458a40fa60e3242830f80c3bf34eca
+      internalID: -454049859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_9
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc57ed62fdcf9c4590e53da4749457c
+      internalID: -351243694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_10
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8ce9bdcea3e284aa45ddb72c374cb7
+      internalID: -749537667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_11
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0a75a007faa43479cdf8fb6e753b0e
+      internalID: 1395407952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_12
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66466550ea366d84a85f640ba502dae2
+      internalID: -1474163240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_13
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0daac372591e48d44bc95162d99793a4
+      internalID: 770015468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_14
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b48cc1a93b4f442a7209161b759cef
+      internalID: 1716674711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_15
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 432
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb9d4f2db743a74ba68ea4de00c48f7
+      internalID: -1423886091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5494409556b82f49b77c3d0e25c4071
+      internalID: -23923496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_17
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 384
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e8a19b456299c459b8bb449a482805
+      internalID: -1803430966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_18
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 384
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9679aac083e97bf4bb7e604c69284af5
+      internalID: 279058460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_19
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 384
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06282063cd435f747b1b577f992b4711
+      internalID: -1775561370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_20
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 384
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a233cce57e42345be404266545e00b
+      internalID: -1797732394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_21
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 384
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04badc7c081d33428764314f9f56437
+      internalID: 1339961397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_22
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 384
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0fa7fc7bae91b41b0d1da44a4d467d
+      internalID: 1037686749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_23
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 384
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f8e5d378b707b40adf382744c6b077
+      internalID: 368833214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_24
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 384
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85de0ff347fa5264189edd395e3df76c
+      internalID: 1485838876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_25
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 384
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe39cff845c6904dbb4c13e05508b9b
+      internalID: 487340404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_26
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 384
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbb4e47e30f359438065d2e44f3bce7
+      internalID: 1652745038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_27
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 384
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34e6536b48346647bde1f9ca0626744
+      internalID: -924893408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af2b605a2cb7824bbf13c1fc8f4d442
+      internalID: -1453024540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_29
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 336
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9095ebdd6804b4d4e91d0ca15878847b
+      internalID: -994842832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_30
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 336
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdbf47ef259a2d41892338e79d8b9bb
+      internalID: -1711139322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_31
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 336
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6844894be063c4741aa831f9603c7fdd
+      internalID: 1436263787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_32
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 336
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fceef536e2551cb478d36c2e788a1b53
+      internalID: -270214543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_33
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 336
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547589eacd893784087ad2278a313cfd
+      internalID: -2074061619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_34
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 336
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac73dcfa01eebfa4d861d4bc2111970f
+      internalID: 2141723881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_35
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 336
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16f8d61289b0504ba4c922615791bdb
+      internalID: 867711682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c31d981d54d22549a58f4a5ea1c7613
+      internalID: 2041710677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_37
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 288
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8616780cc2b93274ea7cc1948dd72389
+      internalID: 535655082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_38
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 288
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ae17a64e802f146bf96582634ca26c
+      internalID: 342080612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_39
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 288
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c77504da437a64594185df6643cf49
+      internalID: 1916044527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_40
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 288
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fffbd6689653d4f85d5650d81eb1cf
+      internalID: -1317663370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_41
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 288
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fa7ab4fd5b825408be44470d357917
+      internalID: -1356084237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_42
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 288
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed99ebaf7f9c034a8830933a9912dc5
+      internalID: 571223483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_43
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 288
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fdd05a3e0af3b419bb7f7a3e89bd8d
+      internalID: 1839103423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06385c16eade403448fefff1abf899ca
+      internalID: -1046832528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_45
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 240
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b983b6204b4bbc444a807fdf0fdb97c9
+      internalID: 586323775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_46
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 240
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e97939592b06034ebf80aa7fddf0bfa
+      internalID: -741955071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_47
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 240
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066104e92d0f5ef418554e9a89b2ddd6
+      internalID: 889548951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_48
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 240
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e640a5c3982398478f9b83f0c854327
+      internalID: 684597891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_49
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 240
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d21cb7d28069449bbc56c55d45cb7c
+      internalID: 1822956800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_50
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 240
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e676f97460d574ebfef1cb2309dda1
+      internalID: 1048424086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_51
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 240
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304f3685c0d8f32458311650f2240039
+      internalID: 952643213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f617d82535f4cb741b68fcaf6538878f
+      internalID: -528418341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_53
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 192
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4678c7cf5f214c542a89814f001b7496
+      internalID: 1548972931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_54
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 192
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1276e2b6cc425de4daa765d219f6ee9c
+      internalID: 1553176785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_55
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 192
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1b6c5dec1c2e342aa842610cc48fcc
+      internalID: 1810402621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af6fe37d812d9b43b1f48326a731b70
+      internalID: -2027866344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_57
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 144
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49986d6e2dba6ba4f9758c248a09398f
+      internalID: 1913072869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_58
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 144
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c16d6c08bd2e44cae13bcc0cdaa999
+      internalID: 1335509944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_59
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 144
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e085eb8d4ad1548b09c71b34e15c88
+      internalID: -2112009354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_60
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 144
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239b2e1bea659e94792e6d465ee21487
+      internalID: -348237310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_61
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 144
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76ba0ede0bcf024a80201dac003534d
+      internalID: 1585990113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_62
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 144
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe9ae9662046c0439a4cc99e4102eba
+      internalID: 212794917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daelocke_SpriteSheet_temp2_63
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 144
+        width: 42
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8ebead5011d0247b74bdf7cd6a48d0
+      internalID: -157816956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3fa5f6274d7377141b638d3dd3cd5479
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Daelocke_SpriteSheet_temp2_50: 1048424086
+      Daelocke_SpriteSheet_temp2_30: -1711139322
+      Daelocke_SpriteSheet_temp2_0: 165502546
+      Daelocke_SpriteSheet_temp2_19: -1775561370
+      Daelocke_SpriteSheet_temp2_27: -924893408
+      Daelocke_SpriteSheet_temp2_10: -749537667
+      Daelocke_SpriteSheet_temp2_2: 366099284
+      Daelocke_SpriteSheet_temp2_5: 438753245
+      Daelocke_SpriteSheet_temp2_12: -1474163240
+      Daelocke_SpriteSheet_temp2_45: 586323775
+      Daelocke_SpriteSheet_temp2_1: -425864545
+      Daelocke_SpriteSheet_temp2_34: 2141723881
+      Daelocke_SpriteSheet_temp2_59: -2112009354
+      Daelocke_SpriteSheet_temp2_60: -348237310
+      Daelocke_SpriteSheet_temp2_11: 1395407952
+      Daelocke_SpriteSheet_temp2_52: -528418341
+      Daelocke_SpriteSheet_temp2_33: -2074061619
+      Daelocke_SpriteSheet_temp2_48: 684597891
+      Daelocke_SpriteSheet_temp2_3: -1475678234
+      Daelocke_SpriteSheet_temp2_9: -351243694
+      Daelocke_SpriteSheet_temp2_13: 770015468
+      Daelocke_SpriteSheet_temp2_4: -1245972899
+      Daelocke_SpriteSheet_temp2_25: 487340404
+      Daelocke_SpriteSheet_temp2_15: -1423886091
+      Daelocke_SpriteSheet_temp2_57: 1913072869
+      Daelocke_SpriteSheet_temp2_39: 1916044527
+      Daelocke_SpriteSheet_temp2_43: 1839103423
+      Daelocke_SpriteSheet_temp2_40: -1317663370
+      Daelocke_SpriteSheet_temp2_20: -1797732394
+      Daelocke_SpriteSheet_temp2_6: 1303991509
+      Daelocke_SpriteSheet_temp2_54: 1553176785
+      Daelocke_SpriteSheet_temp2_41: -1356084237
+      Daelocke_SpriteSheet_temp2_55: 1810402621
+      Daelocke_SpriteSheet_temp2_17: -1803430966
+      Daelocke_SpriteSheet_temp2_21: 1339961397
+      Daelocke_SpriteSheet_temp2_49: 1822956800
+      Daelocke_SpriteSheet_temp2_58: 1335509944
+      Daelocke_SpriteSheet_temp2_16: -23923496
+      Daelocke_SpriteSheet_temp2_18: 279058460
+      Daelocke_SpriteSheet_temp2_31: 1436263787
+      Daelocke_SpriteSheet_temp2_42: 571223483
+      Daelocke_SpriteSheet_temp2_26: 1652745038
+      Daelocke_SpriteSheet_temp2_8: -454049859
+      Daelocke_SpriteSheet_temp2_22: 1037686749
+      Daelocke_SpriteSheet_temp2_14: 1716674711
+      Daelocke_SpriteSheet_temp2_38: 342080612
+      Daelocke_SpriteSheet_temp2_44: -1046832528
+      Daelocke_SpriteSheet_temp2_7: 703749495
+      Daelocke_SpriteSheet_temp2_51: 952643213
+      Daelocke_SpriteSheet_temp2_63: -157816956
+      Daelocke_SpriteSheet_temp2_29: -994842832
+      Daelocke_SpriteSheet_temp2_47: 889548951
+      Daelocke_SpriteSheet_temp2_32: -270214543
+      Daelocke_SpriteSheet_temp2_53: 1548972931
+      Daelocke_SpriteSheet_temp2_62: 212794917
+      Daelocke_SpriteSheet_temp2_24: 1485838876
+      Daelocke_SpriteSheet_temp2_23: 368833214
+      Daelocke_SpriteSheet_temp2_37: 535655082
+      Daelocke_SpriteSheet_temp2_46: -741955071
+      Daelocke_SpriteSheet_temp2_56: -2027866344
+      Daelocke_SpriteSheet_temp2_28: -1453024540
+      Daelocke_SpriteSheet_temp2_35: 867711682
+      Daelocke_SpriteSheet_temp2_36: 2041710677
+      Daelocke_SpriteSheet_temp2_61: 1585990113
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
