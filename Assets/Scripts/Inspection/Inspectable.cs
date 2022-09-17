@@ -10,16 +10,30 @@ public class Inspectable : MonoBehaviour
 
     [SerializeField] private float _timeToInspect = 3f;
     [SerializeField] private UnityEvent OnInspectionCompleted;
-    [SerializeField] private Inspectable _required;
 
     private InspectableData _data;
+    private MetInspectedCondition[] _allConditions;
 
     public static event Action<bool> InspectablesInRangeChanged;
     public static IReadOnlyCollection<Inspectable> InspectablesInRange => _inspectablesInRange;
     public float InspectionProgress => _data.TimeInspected / _timeToInspect;
     public bool WasFullyInspected => InspectionProgress >= 1f;
 
-    public bool ConditionsMet => _required == null || _required.WasFullyInspected;
+    public void Awake()
+    {
+        _allConditions = GetComponents<MetInspectedCondition>();
+    }
+
+    public bool MetConditions()
+    {
+        foreach (var condition in _allConditions)
+        {
+            if (condition.Met() == false)
+                return false;
+        }
+
+        return true;
+    }
 
     public void Bind(InspectableData inspectableData)
     {
@@ -32,7 +46,7 @@ public class Inspectable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player") && WasFullyInspected == false && ConditionsMet)
+        if(other.CompareTag("Player") && WasFullyInspected == false && MetConditions())
         {
             _inspectablesInRange.Add(this);
             InspectablesInRangeChanged?.Invoke(true);

@@ -1036,7 +1036,7 @@ PrefabInstance:
       objectReference: {fileID: 52746568}
     - target: {fileID: 383635215152870970, guid: 690e10997b7797846b1244e2b82ff277, type: 3}
       propertyPath: m_VersionIndex
-      value: 4677
+      value: 4680
       objectReference: {fileID: 0}
     - target: {fileID: 383635215152870974, guid: 690e10997b7797846b1244e2b82ff277, type: 3}
       propertyPath: m_Mesh
@@ -7218,6 +7218,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719361627}
   m_CullTransparentMesh: 1
+--- !u!1 &1727897264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2732719114358903646, guid: 8a2680c17f003a14d853770bdcb057fb, type: 3}
+  m_PrefabInstance: {fileID: 1889098467}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1749915527
 GameObject:
   m_ObjectHideFlags: 0
@@ -8020,12 +8025,25 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 256333409631393750, guid: 8a2680c17f003a14d853770bdcb057fb, type: 3}
   m_PrefabInstance: {fileID: 1889098467}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1727897264}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11e5399ef163e5a4e8cc82978e68d028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1889098472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727897264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1316832a6d63c64fa9e372219f0862c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _requiredInspectable: {fileID: 1016296931}
 --- !u!1 &1894742302
 GameObject:
   m_ObjectHideFlags: 3
@@ -9562,7 +9580,7 @@ PrefabInstance:
       objectReference: {fileID: 1980735515}
     - target: {fileID: 383635215152870970, guid: 690e10997b7797846b1244e2b82ff277, type: 3}
       propertyPath: m_VersionIndex
-      value: 4683
+      value: 4686
       objectReference: {fileID: 0}
     - target: {fileID: 383635215152870974, guid: 690e10997b7797846b1244e2b82ff277, type: 3}
       propertyPath: m_Mesh
