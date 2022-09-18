@@ -10,7 +10,6 @@ public class MetInspectedCondition : MonoBehaviour, IMet
         return _requiredInspectable.WasFullyInspected;
     }
 
-    //[ExecuteInEditMode]
     private void OnDrawGizmos()
     {
         if(_requiredInspectable != null)
