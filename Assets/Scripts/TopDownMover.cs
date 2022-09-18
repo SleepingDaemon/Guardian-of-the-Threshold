@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,10 +28,16 @@ public class TopDownMover : MonoBehaviour
             _animator.SetFloat("x", xMove);
             _animator.SetFloat("z", zMove);
             _animator.SetBool("IsRunning", true);
+            _animator.SetBool("IsSitting", false);
         }
         else
         {
             _animator.SetBool("IsRunning", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.T) && direction == Vector3.zero)
+        {
+            _animator.SetBool("IsSitting", true);
         }
     }
 }
