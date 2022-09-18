@@ -9,4 +9,14 @@ public class MetInspectedCondition : MonoBehaviour, IMet
     {
         return _requiredInspectable.WasFullyInspected;
     }
+
+    //[ExecuteInEditMode]
+    private void OnDrawGizmos()
+    {
+        if(_requiredInspectable != null)
+        {
+            Gizmos.color = Met() ? Color.green : Color.red;
+            Gizmos.DrawLine(transform.position, _requiredInspectable.transform.position);
+        }
+    }
 }

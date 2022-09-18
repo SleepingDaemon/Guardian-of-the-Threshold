@@ -16,6 +16,14 @@ public class TopDownMover : MonoBehaviour
         _animator = GetComponentInChildren<Animator>();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.T) && direction == Vector3.zero)
+        {
+            _animator.SetBool("IsSitting", true);
+        }
+    }
+
     private void FixedUpdate()
     {
         float xMove = Input.GetAxisRaw("Horizontal");
@@ -33,11 +41,6 @@ public class TopDownMover : MonoBehaviour
         else
         {
             _animator.SetBool("IsRunning", false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.T) && direction == Vector3.zero)
-        {
-            _animator.SetBool("IsSitting", true);
         }
     }
 }
