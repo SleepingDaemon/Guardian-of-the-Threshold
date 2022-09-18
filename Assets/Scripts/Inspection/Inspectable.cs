@@ -12,7 +12,7 @@ public class Inspectable : MonoBehaviour
     [SerializeField] private UnityEvent OnInspectionCompleted;
 
     private InspectableData _data;
-    private MetInspectedCondition[] _allConditions;
+    private IMet[] _allConditions;
 
     public static event Action<bool> InspectablesInRangeChanged;
     public static IReadOnlyCollection<Inspectable> InspectablesInRange => _inspectablesInRange;
@@ -21,7 +21,7 @@ public class Inspectable : MonoBehaviour
 
     public void Awake()
     {
-        _allConditions = GetComponents<MetInspectedCondition>();
+        _allConditions = GetComponents<IMet>();
     }
 
     public bool MetConditions()
