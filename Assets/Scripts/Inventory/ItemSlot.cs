@@ -3,12 +3,12 @@
 [Serializable]
 public class ItemSlot
 {
-    public Item _item;
+    public Item Item;
 
-    public bool IsEmpty => _item == null;
+    public bool IsEmpty => Item == null;
 
     public void SetItem(Item item)
     {
-        _item = item;
+        Item = item;
     }
 }
