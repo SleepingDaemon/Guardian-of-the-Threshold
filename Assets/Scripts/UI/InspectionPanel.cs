@@ -17,10 +17,10 @@ public class InspectionPanel : MonoBehaviour
         _hintText.enabled = false;
         _inspectionCompleteText.enabled = false;
         Inspectable.InspectablesInRangeChanged += UpdateHintTextState;
-        Inspectable.AnyInspectionComplete += HandleAnyInspectionCompleted;
+        Inspectable.AnyInspectionComplete += ShowInspectionCompleteText;
     }
 
-    private void HandleAnyInspectionCompleted(Inspectable inspectable, string inspectionCompleteMessage)
+    private void ShowInspectionCompleteText(Inspectable inspectable, string inspectionCompleteMessage)
     {
         _inspectionCompleteText.SetText(inspectionCompleteMessage);
         _inspectionCompleteText.enabled = true;
@@ -44,7 +44,7 @@ public class InspectionPanel : MonoBehaviour
     private void OnDisable()
     {
         Inspectable.InspectablesInRangeChanged -= UpdateHintTextState;
-        Inspectable.AnyInspectionComplete -= HandleAnyInspectionCompleted;
+        Inspectable.AnyInspectionComplete -= ShowInspectionCompleteText;
     }
 
     private void Update()

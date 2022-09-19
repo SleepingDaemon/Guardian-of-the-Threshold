@@ -42,7 +42,7 @@ public class Inspectable : MonoBehaviour
         _data = inspectableData;
         if (WasFullyInspected)
         {
-            CompleteInspection();
+            RestoreInspectionState();
         }
     }
 
@@ -81,5 +81,10 @@ public class Inspectable : MonoBehaviour
         InspectablesInRangeChanged?.Invoke(_inspectablesInRange.Any());
         OnInspectionCompleted?.Invoke();
         AnyInspectionComplete?.Invoke(this, _completedInspectionText);
+    }
+
+    private void RestoreInspectionState()
+    {
+        OnInspectionCompleted?.Invoke();
     }
 }
