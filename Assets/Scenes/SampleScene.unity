@@ -1954,6 +1954,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454015110}
     m_Modifications:
+    - target: {fileID: 5175366970041515159, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6985622609657092325, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2041,6 +2045,10 @@ PrefabInstance:
     - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Name
       value: Inventory Slot (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
@@ -2304,7 +2312,7 @@ GameObject:
   - component: {fileID: 224553553}
   - component: {fileID: 224553554}
   - component: {fileID: 224553555}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Quest List Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3622,7 +3630,7 @@ GameObject:
   - component: {fileID: 454015110}
   - component: {fileID: 454015112}
   - component: {fileID: 454015111}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Inventory Slots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5674,7 +5682,7 @@ GameObject:
   - component: {fileID: 587945201}
   - component: {fileID: 587945200}
   - component: {fileID: 587945199}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Rewards Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6778,6 +6786,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454015110}
     m_Modifications:
+    - target: {fileID: 5175366970041515159, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6985622609657092325, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6865,6 +6877,10 @@ PrefabInstance:
     - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Name
       value: Inventory Slot (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
@@ -7525,12 +7541,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994451768}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -400, y: -225, z: 0}
-  m_LocalScale: {x: 0.41666666, y: 0.41666666, z: 0.41666666}
+  m_LocalPosition: {x: 248.88885, y: 140, z: 0}
+  m_LocalScale: {x: 0.7407407, y: 0.7407407, z: 0.7407407}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1044890611}
-  m_RootOrder: 4
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1008202103
 GameObject:
@@ -7946,7 +7962,6 @@ RectTransform:
   - {fileID: 1948301275}
   - {fileID: 7714266402622476038}
   - {fileID: 1452752318}
-  - {fileID: 994451771}
   - {fileID: 1832842366}
   - {fileID: 1664623680}
   m_Father: {fileID: 0}
@@ -8686,6 +8701,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454015110}
     m_Modifications:
+    - target: {fileID: 5175366970041515159, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6985622609657092325, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8773,6 +8792,10 @@ PrefabInstance:
     - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Name
       value: Inventory Slot (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
@@ -9143,6 +9166,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454015110}
     m_Modifications:
+    - target: {fileID: 5175366970041515159, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6985622609657092325, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9230,6 +9257,10 @@ PrefabInstance:
     - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Name
       value: Inventory Slot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
@@ -9734,6 +9765,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454015110}
     m_Modifications:
+    - target: {fileID: 5175366970041515159, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6985622609657092325, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9821,6 +9856,10 @@ PrefabInstance:
     - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Name
       value: Inventory Slot (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
@@ -10568,6 +10607,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454015110}
     m_Modifications:
+    - target: {fileID: 5175366970041515159, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6985622609657092325, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -10655,6 +10698,10 @@ PrefabInstance:
     - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Name
       value: Inventory Slot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
@@ -11272,7 +11319,7 @@ RectTransform:
   - {fileID: 454015110}
   - {fileID: 193907270}
   m_Father: {fileID: 1044890611}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -11340,8 +11387,8 @@ CanvasGroup:
   m_GameObject: {fileID: 1664623679}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!114 &1664623685
 MonoBehaviour:
@@ -11357,7 +11404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.3882353}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12862,7 +12909,7 @@ RectTransform:
   m_Children:
   - {fileID: 1547592598}
   m_Father: {fileID: 1044890611}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13869,6 +13916,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454015110}
     m_Modifications:
+    - target: {fileID: 5175366970041515159, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6985622609657092325, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -13956,6 +14007,10 @@ PrefabInstance:
     - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Name
       value: Inventory Slot (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
@@ -14574,6 +14629,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454015110}
     m_Modifications:
+    - target: {fileID: 5175366970041515159, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6985622609657092325, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -14661,6 +14720,10 @@ PrefabInstance:
     - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Name
       value: Inventory Slot (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
@@ -14839,7 +14902,7 @@ GameObject:
   - component: {fileID: 2039757073}
   - component: {fileID: 2039757074}
   - component: {fileID: 2039757075}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Quest Details Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15090,7 +15153,7 @@ GameObject:
   - component: {fileID: 2053166211}
   - component: {fileID: 2053166212}
   - component: {fileID: 2053166213}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Quest Objectives Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16087,6 +16150,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454015110}
     m_Modifications:
+    - target: {fileID: 5175366970041515159, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6985622609657092325, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -16174,6 +16241,10 @@ PrefabInstance:
     - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
       propertyPath: m_Name
       value: Inventory Slot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651507505358886031, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afb089f5e8918f748918d44cc07cc028, type: 3}
@@ -17301,7 +17372,7 @@ GameObject:
   - component: {fileID: 7714266403005665573}
   - component: {fileID: 7714266403005665572}
   - component: {fileID: 7714266403005665575}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Dialog Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}

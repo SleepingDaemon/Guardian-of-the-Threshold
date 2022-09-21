@@ -1,11 +1,13 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventoryPanelSlot : MonoBehaviour
+public class InventoryPanelSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     private ItemSlot _itemSlot;
     [SerializeField] private Image _itemIcon;
+    [SerializeField] private Outline _outline;
 
     public void Bind(ItemSlot itemSlot)
     {
@@ -13,6 +15,17 @@ public class InventoryPanelSlot : MonoBehaviour
         _itemSlot.Changed += UpdateIconSlot;
 
         UpdateIconSlot();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        _outline.enabled = true;
+        Debug.Log("Outlining");
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        _outline.enabled = false;
     }
 
     private void UpdateIconSlot()
