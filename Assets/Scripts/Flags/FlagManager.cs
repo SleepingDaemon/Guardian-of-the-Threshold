@@ -16,10 +16,12 @@ public class FlagManager : MonoBehaviour
         _flagsByName = _allFlags.ToDictionary(k => k.name.Replace(" ", ""), v => v);
     }
 
+#if UNITY_EDITOR
     private void OnValidate()
     {
         _allFlags = SleepingDaemon.GetAllInstances<GameFlagBase>();
     }
+#endif
 
     public void Bind(List<GameFlagData> gameFlagDatas)
     {

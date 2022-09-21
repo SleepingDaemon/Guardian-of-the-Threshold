@@ -3,6 +3,7 @@ using UnityEngine;
 
 public static class SleepingDaemon
 {
+#if UNITY_EDITOR
     public static T[] GetAllInstances<T>() where T : UnityEngine.Object
     {
         string[] guids = AssetDatabase.FindAssets("t:" + typeof(T).Name);
@@ -15,4 +16,5 @@ public static class SleepingDaemon
 
         return a;
     }
+#endif
 }
