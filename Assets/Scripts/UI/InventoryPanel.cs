@@ -3,9 +3,8 @@ using UnityEngine;
 
 public class InventoryPanel : MonoBehaviour
 {
-    IEnumerator Start()
+    private void Start()
     {
-        yield return null;
         Bind(Inventory.Instance);
     }
 

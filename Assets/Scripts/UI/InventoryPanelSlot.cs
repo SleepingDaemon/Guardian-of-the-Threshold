@@ -10,10 +10,16 @@ public class InventoryPanelSlot : MonoBehaviour
     public void Bind(ItemSlot itemSlot)
     {
         _itemSlot = itemSlot;
+        _itemSlot.Changed += UpdateIconSlot;
 
-        if (itemSlot.Item != null)
+        UpdateIconSlot();
+    }
+
+    private void UpdateIconSlot()
+    {
+        if (_itemSlot.Item != null)
         {
-            _itemIcon.sprite = itemSlot.Item.Icon;
+            _itemIcon.sprite = _itemSlot.Item.Icon;
             _itemIcon.enabled = true;
         }
         else
