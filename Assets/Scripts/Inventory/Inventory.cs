@@ -7,8 +7,13 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public static Inventory Instance { get; private set; }
+
     const int GENERAL_SIZE = 9;
+    const int CRAFTING_SIZE = 9;
+
     public ItemSlot[] GeneralInventorySlots = new ItemSlot[GENERAL_SIZE];
+    public ItemSlot[] CraftingInventorySlots = new ItemSlot[GENERAL_SIZE];
+
     public Item _debugItem;
 
     private void Awake()
@@ -18,6 +23,11 @@ public class Inventory : MonoBehaviour
         for (int i = 0; i < GENERAL_SIZE; i++)
         {
             GeneralInventorySlots[i] = new ItemSlot();
+        }
+
+        for (int i = 0; i < CRAFTING_SIZE; i++)
+        {
+            CraftingInventorySlots[i] = new ItemSlot();
         }
     }
 
@@ -54,6 +64,19 @@ public class Inventory : MonoBehaviour
             if(slotData == null)
             {
                 slotData = new SlotData() { SlotName = "General" + i };
+                slotDatas.Add(slotData);
+            }
+
+            slot.Bind(slotData);
+        }
+
+        for (int i = 0; i < CraftingInventorySlots.Length; i++)
+        {
+            var slot = CraftingInventorySlots[i];
+            var slotData = slotDatas.FirstOrDefault(t => t.SlotName == "Crafting" + i);
+            if (slotData == null)
+            {
+                slotData = new SlotData() { SlotName = "Crafting" + i };
                 slotDatas.Add(slotData);
             }
 
