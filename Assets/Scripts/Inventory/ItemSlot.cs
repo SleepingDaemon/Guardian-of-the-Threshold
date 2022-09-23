@@ -28,6 +28,13 @@ public class ItemSlot
         var item = Resources.Load<Item>("Items/" + _slotData.ItemName);
         SetItem(item);
     }
+
+    public void Swap(ItemSlot slotToSwapWith)
+    {
+        var itemInOtherSlot = slotToSwapWith.Item; //Cache item
+        slotToSwapWith.SetItem(Item); //Set item to new slot
+        SetItem(itemInOtherSlot); //Set item to cached slot
+    }
 }
 
 [Serializable]
