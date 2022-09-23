@@ -55,6 +55,14 @@ public class Inventory : MonoBehaviour
         GeneralInventorySlots.First().SetItem(lastItem);
     }
 
+    public void ClearCraftingSlots()
+    {
+        foreach (var slot in CraftingInventorySlots)
+        {
+            slot.RemoveItem();
+        }
+    }
+
     public void Bind(List<SlotData> slotDatas)
     {
         for (int i = 0; i < GeneralInventorySlots.Length; i++)
