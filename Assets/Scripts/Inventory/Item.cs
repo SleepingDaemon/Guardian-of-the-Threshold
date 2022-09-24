@@ -7,6 +7,6 @@ public class Item : ScriptableObject
 {
     public Sprite Icon;
 
-    [Multiline(3)]
+    [TextArea(3, 10)]
     public string Description;
 }

@@ -12,12 +12,33 @@ public class ItemTooltipPanel : MonoBehaviour
     [SerializeField] private TMP_Text _description;
     [SerializeField] private Image _icon;
 
-    private void Awake() => Instance = this;
+    private CanvasGroup _canvasGroup;
+
+    private void Awake()
+    {
+        Instance = this;
+        _canvasGroup = GetComponent<CanvasGroup>();
+    }
 
     public void ShowItem(Item item)
     {
-        _name.SetText(item.name);
-        _description.SetText(item.Description);
-        _icon.sprite = item.Icon;
+        if (item == null)
+        {
+            ToggleVisibility(false);
+        }
+        else
+        {
+            ToggleVisibility(true);
+            _name.SetText(item.name);
+            _description.SetText(item.Description);
+            _icon.sprite = item.Icon;
+        }
+    }
+
+    public void ToggleVisibility(bool visibility)
+    {
+        _canvasGroup.alpha = visibility ? 1f : 0f;
+        _canvasGroup.interactable = visibility;
+        _canvasGroup.blocksRaycasts = visibility;
     }
 }
