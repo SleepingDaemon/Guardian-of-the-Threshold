@@ -44,6 +44,12 @@ public class InventoryPanelSlot : MonoBehaviour,
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if(Focused == null)
+        {
+            //todo: Drop item on the ground
+            _itemSlot.RemoveItem();
+        }
+
         if (_itemSlot.IsEmpty == false && Focused != null)
             _itemSlot.Swap(Focused._itemSlot);
 

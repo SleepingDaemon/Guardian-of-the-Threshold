@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ItemTooltipPanel : MonoBehaviour
+public class ItemTooltipPanel : MonoBehaviour, IPointerClickHandler
 {
     public static ItemTooltipPanel Instance { get; private set; }
 
@@ -40,5 +39,10 @@ public class ItemTooltipPanel : MonoBehaviour
         _canvasGroup.alpha = visibility ? 1f : 0f;
         _canvasGroup.interactable = visibility;
         _canvasGroup.blocksRaycasts = visibility;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        ToggleVisibility(false);
     }
 }
