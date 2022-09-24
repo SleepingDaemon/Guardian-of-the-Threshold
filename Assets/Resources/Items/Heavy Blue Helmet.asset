@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Heavy Blue Helmet
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: a1f28fa257079774ea044a98eae133c5, type: 3}
+  Description: 'The Heavy Blue Duranium Helmet was carefully crafted from the armor
+    of a parasitical beast. '

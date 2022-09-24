@@ -6,4 +6,7 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     public Sprite Icon;
+
+    [Multiline(3)]
+    public string Description;
 }
