@@ -8,7 +8,7 @@ public class Inventory : MonoBehaviour
 {
     public static Inventory Instance { get; private set; }
 
-    const int GENERAL_SIZE = 9;
+    const int GENERAL_SIZE = 12;
     const int CRAFTING_SIZE = 9;
 
     public ItemSlot[] GeneralInventorySlots = new ItemSlot[GENERAL_SIZE];

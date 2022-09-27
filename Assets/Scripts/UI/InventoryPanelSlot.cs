@@ -60,7 +60,10 @@ public class InventoryPanelSlot : MonoBehaviour,
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        ItemTooltipPanel.Instance.ShowItem(_itemSlot.Item);
+        if (Input.GetKey(KeyCode.Q) && _itemSlot.IsEmpty == false)
+            Inventory.Instance.AddItem(_itemSlot.Item);
+        else
+            ItemTooltipPanel.Instance.ShowItem(_itemSlot.Item);
     }
 
     public void OnPointerEnter(PointerEventData eventData)

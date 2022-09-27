@@ -2,11 +2,19 @@ using System.Collections;
 using System;
 using UnityEngine;
 
-public class InventoryPanel : MonoBehaviour
+public class InventoryPanel : ToggleablePanel
 {
     private void Start()
     {
         Bind(Inventory.Instance);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            Show();
+        }
     }
 
     public void Bind(Inventory inventory)
