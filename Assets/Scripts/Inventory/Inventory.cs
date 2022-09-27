@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+public enum InventoryType
+{
+    General,
+    Crafting,
+}
+
 public class Inventory : MonoBehaviour
 {
     public static Inventory Instance { get; private set; }
@@ -31,10 +37,20 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void AddItem(Item item)
+    public void AddItem(Item item, InventoryType preferredInventoryType = InventoryType.General)
     {
-        var firstEmptySlot = GeneralInventorySlots.FirstOrDefault(t => t.IsEmpty);
-        firstEmptySlot.SetItem(item);
+        var preferredSlots = preferredInventoryType == InventoryType.General ? GeneralInventorySlots : CraftingInventorySlots;
+        var backupSlots = preferredInventoryType != InventoryType.General ? CraftingInventorySlots : GeneralInventorySlots;
+
+        var firstEmptySlot = preferredSlots.FirstOrDefault(t => t.IsEmpty);
+
+        if (firstEmptySlot == null)
+            firstEmptySlot = backupSlots.FirstOrDefault(t => t.IsEmpty);
+
+        if (firstEmptySlot != null)
+            firstEmptySlot.SetItem(item);
+        else
+            Debug.LogError("Player Inventory is full");
     }
 
     [ContextMenu(nameof(AddDebugItem))]
