@@ -11,14 +11,14 @@ public class Item : ScriptableObject
     public string Description;
 
     [ContextMenu(nameof(Add1))] public void Add1() { Inventory.Instance.AddItem(this); }
-    [ContextMenu(nameof(Add5))] public void Add5() { for (int i = 0; i < 5; i++) { Inventory.Instance.AddItem(this); } }
+    [ContextMenu(nameof(Add5))] public void Add5() { for (int i = 0; i < 5; i++) { Add1(); } }
 
     [ContextMenu(nameof(Add10))]
     public void Add10()
     {
         for (int i = 0; i < 10; i++)
         {
-            Inventory.Instance.AddItem(this);
+            Add1();
         }
     }
 }

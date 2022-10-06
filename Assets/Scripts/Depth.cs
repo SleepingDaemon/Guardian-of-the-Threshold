@@ -20,7 +20,7 @@ public class Depth : MonoBehaviour
 
             foreach (var rend in renderer)
             {
-                rend.sortingOrder = (int)(rend.transform.position.z * -100);
+                rend.sortingOrder = (int)((rend.transform.position.y + rend.transform.position.z) * -100);
             }
             if (runOnlyOnce)
                 Destroy(this);

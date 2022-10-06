@@ -9,11 +9,23 @@ public class TopDownMover : MonoBehaviour
     private Vector3 direction = Vector3.zero;
     private Rigidbody rb;
     private Animator _animator;
+    private PlayerControls _playerControls;
+
+    private void OnEnable()
+    {
+        _playerControls?.Enable();
+    }
+
+    private void OnDisable()
+    {
+        _playerControls?.Disable();
+    }
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         _animator = GetComponentInChildren<Animator>();
+        _playerControls = new PlayerControls();
     }
 
     private void Update()
@@ -26,8 +38,8 @@ public class TopDownMover : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float xMove = Input.GetAxisRaw("Horizontal");
-        float zMove = Input.GetAxisRaw("Vertical");
+        float xMove = _playerControls.Player.Movement.ReadValue<Vector2>().x;
+        float zMove = _playerControls.Player.Movement.ReadValue<Vector2>().y;
         direction = new Vector3(xMove, 0, zMove);
         rb.velocity = direction.normalized * speed;
 
