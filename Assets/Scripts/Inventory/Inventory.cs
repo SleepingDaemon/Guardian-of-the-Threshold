@@ -42,24 +42,31 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    private bool AddItemToSlot(Item item, IEnumerable<ItemSlot> slots)
+    {
+        var slot = slots.FirstOrDefault(t => t.IsEmpty);
+        if(slot != null)
+        {
+            slot.SetItem(item);
+            return true;
+        }
+
+        return false;
+    }
+
     public void AddItem(Item item, InventoryType preferredInventoryType = InventoryType.General)
     {
         var preferredSlots = preferredInventoryType == InventoryType.General ? GeneralInventorySlots : CraftingInventorySlots;
         var backupSlots = preferredInventoryType != InventoryType.General ? CraftingInventorySlots : GeneralInventorySlots;
 
-        var firstEmptySlot = preferredSlots.FirstOrDefault(t => t.IsEmpty);
+        if (AddItemToSlot(item, preferredSlots))
+            return;
 
-        if (firstEmptySlot == null)
-            firstEmptySlot = backupSlots.FirstOrDefault(t => t.IsEmpty);
+        if (AddItemToSlot(item, backupSlots))
+            return;
 
-        if (firstEmptySlot == null)
-        {
-            firstEmptySlot = OverflowSlots.Last();
+        if (AddItemToSlot(item, OverflowSlots))
             CreateOverflowSlot();
-        }
-
-        if (firstEmptySlot != null)
-            firstEmptySlot.SetItem(item);
         else
             Debug.LogError("Player Inventory is full");
     }
