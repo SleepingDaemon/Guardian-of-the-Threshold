@@ -12,11 +12,14 @@ public class ItemSlot
 
     public bool IsEmpty => Item == null;
 
+    public bool HasStackSpaceAvailable => _slotData.StackCount < Item.MaxStackSize;
+
     public void SetItem(Item item)
     {
         var previousItem = Item;
         Item = item;
         _slotData.ItemName = item?.name ?? string.Empty;
+        _slotData.StackCount = 1;
 
         if (previousItem != Item)
             Changed?.Invoke();
@@ -40,6 +43,12 @@ public class ItemSlot
     {
         SetItem(null);
     }
+
+    public void ModifyStack(int amount)
+    {
+        _slotData.StackCount += amount;
+        Changed?.Invoke();
+    }
 }
 
 [Serializable]
@@ -47,4 +56,5 @@ public class SlotData
 {
     public string SlotName;
     public string ItemName;
+    public int StackCount;
 }

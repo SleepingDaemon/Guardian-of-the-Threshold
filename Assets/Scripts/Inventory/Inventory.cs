@@ -17,9 +17,9 @@ public class Inventory : MonoBehaviour
     const int GENERAL_SIZE = 12;
     const int CRAFTING_SIZE = 9;
 
-    public List<ItemSlot> OverflowSlots = new List<ItemSlot>();
     public ItemSlot[] GeneralInventorySlots = new ItemSlot[GENERAL_SIZE];
     public ItemSlot[] CraftingInventorySlots = new ItemSlot[GENERAL_SIZE];
+    public List<ItemSlot> OverflowSlots = new List<ItemSlot>();
 
     public Item _debugItem;
 
@@ -44,6 +44,13 @@ public class Inventory : MonoBehaviour
 
     private bool AddItemToSlot(Item item, IEnumerable<ItemSlot> slots)
     {
+        var stackableSlot = slots.FirstOrDefault(t => t.Item == item && t.HasStackSpaceAvailable);
+        if (stackableSlot != null)
+        {
+            stackableSlot.ModifyStack(1);
+            return true;
+        }
+
         var slot = slots.FirstOrDefault(t => t.IsEmpty);
         if(slot != null)
         {
