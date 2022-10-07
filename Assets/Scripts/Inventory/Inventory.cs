@@ -71,6 +71,40 @@ public class Inventory : MonoBehaviour
             Debug.LogError("Player Inventory is full");
     }
 
+    public void Swap(ItemSlot sourceSlot, ItemSlot targetSlot)
+    {
+        if (targetSlot == TopOverflowSlot)
+            Debug.LogError("Can't drag items onto the overflow inventory");
+        else if(sourceSlot == TopOverflowSlot)
+            MoveItemFromOverflowSlot(targetSlot);
+        else
+            sourceSlot.Swap(targetSlot);
+    }
+
+    private void MoveItemFromOverflowSlot(ItemSlot targetSlot)
+    {
+        targetSlot.SetItem(TopOverflowSlot.Item);
+        MoveOverflowItemsUp();
+    }
+
+    public void RemoveItemFromSlot(ItemSlot itemSlot)
+    {
+        itemSlot.RemoveItem();
+        if (itemSlot == TopOverflowSlot)
+            MoveOverflowItemsUp();
+    }
+
+    private void MoveOverflowItemsUp()
+    {
+        for (int i = 0; i < OverflowSlots.Count - 1; i++) // -1 to set last slot to empty
+        {
+            var item = OverflowSlots[i + 1].Item; //get the item from the next slot
+            OverflowSlots[i].SetItem(item);
+        }
+
+        OverflowSlots.Last().RemoveItem();
+    }
+
     [ContextMenu(nameof(AddDebugItem))]
     public void AddDebugItem()
     {

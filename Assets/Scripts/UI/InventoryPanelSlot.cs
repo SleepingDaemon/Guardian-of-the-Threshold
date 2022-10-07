@@ -11,7 +11,7 @@ public class InventoryPanelSlot : MonoBehaviour,
     IEndDragHandler,
     IPointerClickHandler
 {
-    private static InventoryPanelSlot Focused;
+    private static InventoryPanelSlot TargetItemSlot;
     private ItemSlot _itemSlot;
 
     [SerializeField] private Image _draggedItemIcon;
@@ -44,14 +44,14 @@ public class InventoryPanelSlot : MonoBehaviour,
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if(Focused == null)
+        if(TargetItemSlot == null)
         {
             //todo: Drop item on the ground
-            _itemSlot.RemoveItem();
+            Inventory.Instance.RemoveItemFromSlot(_itemSlot);
         }
 
-        if (_itemSlot.IsEmpty == false && Focused != null)
-            _itemSlot.Swap(Focused._itemSlot);
+        if (_itemSlot.IsEmpty == false && TargetItemSlot != null)
+            Inventory.Instance.Swap( _itemSlot, TargetItemSlot._itemSlot);
 
         _itemIcon.color = Color.white;
         _draggedItemIcon.sprite = null;
@@ -68,14 +68,14 @@ public class InventoryPanelSlot : MonoBehaviour,
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Focused = this;
+        TargetItemSlot = this;
         _outline.enabled = true;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (Focused == this)
-            Focused = null;
+        if (TargetItemSlot == this)
+            TargetItemSlot = null;
 
         _outline.enabled = false;
     }
