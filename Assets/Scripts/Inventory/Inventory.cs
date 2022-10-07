@@ -25,6 +25,8 @@ public class Inventory : MonoBehaviour
 
     public ItemSlot TopOverflowSlot => OverflowSlots?.FirstOrDefault();
 
+    private List<SlotData> _slotDatas;
+
     private void Awake()
     {
         Instance = this;
@@ -51,7 +53,10 @@ public class Inventory : MonoBehaviour
             firstEmptySlot = backupSlots.FirstOrDefault(t => t.IsEmpty);
 
         if (firstEmptySlot == null)
-            firstEmptySlot = TopOverflowSlot;
+        {
+            firstEmptySlot = OverflowSlots.Last();
+            CreateOverflowSlot();
+        }
 
         if (firstEmptySlot != null)
             firstEmptySlot.SetItem(item);
@@ -87,17 +92,15 @@ public class Inventory : MonoBehaviour
 
     public void Bind(List<SlotData> slotDatas)
     {
-        var overflowSlot = new ItemSlot();
-        var overflowSlotData = new SlotData() { SlotName = "Overflow" + OverflowSlots.Count };
-        slotDatas.Add(overflowSlotData);
-        overflowSlot.Bind(overflowSlotData);
-        OverflowSlots.Add(overflowSlot);
+        _slotDatas = slotDatas;
+
+        CreateOverflowSlot();
 
         for (int i = 0; i < GeneralInventorySlots.Length; i++)
         {
             var slot = GeneralInventorySlots[i];
             var slotData = slotDatas.FirstOrDefault(t => t.SlotName == "General" + i);
-            if(slotData == null)
+            if (slotData == null)
             {
                 slotData = new SlotData() { SlotName = "General" + i };
                 slotDatas.Add(slotData);
@@ -118,5 +121,14 @@ public class Inventory : MonoBehaviour
 
             slot.Bind(slotData);
         }
+    }
+
+    private void CreateOverflowSlot()
+    {
+        var overflowSlot = new ItemSlot();
+        var overflowSlotData = new SlotData() { SlotName = "Overflow" + OverflowSlots.Count };
+        _slotDatas.Add(overflowSlotData);
+        overflowSlot.Bind(overflowSlotData);
+        OverflowSlots.Add(overflowSlot);
     }
 }
