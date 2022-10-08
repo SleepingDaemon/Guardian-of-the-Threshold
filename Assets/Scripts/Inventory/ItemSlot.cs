@@ -14,6 +14,8 @@ public class ItemSlot
 
     public bool HasStackSpaceAvailable => _slotData.StackCount < Item.MaxStackSize;
 
+    public int StackCount => _slotData.StackCount;
+
     public void SetItem(Item item)
     {
         var previousItem = Item;
@@ -21,7 +23,7 @@ public class ItemSlot
         _slotData.ItemName = item?.name ?? string.Empty;
         _slotData.StackCount = 1;
 
-        if (previousItem != Item)
+        if (previousItem != item)
             Changed?.Invoke();
     }
 
@@ -29,7 +31,8 @@ public class ItemSlot
     {
         _slotData = slotData;
         var item = Resources.Load<Item>("Items/" + _slotData.ItemName);
-        SetItem(item);
+        Item = item;
+        Changed?.Invoke();
     }
 
     public void Swap(ItemSlot slotToSwapWith)

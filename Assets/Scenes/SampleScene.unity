@@ -11113,7 +11113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b7316c726731441869919e28b5b77f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OverflowSlots: []
   GeneralInventorySlots:
   - Item: {fileID: 0}
   - Item: {fileID: 0}
@@ -11137,6 +11136,7 @@ MonoBehaviour:
   - Item: {fileID: 0}
   - Item: {fileID: 0}
   - Item: {fileID: 0}
+  OverflowSlots: []
   _debugItem: {fileID: 11400000, guid: cdfd0b5b0417f9048baeddbacbee2c7f, type: 2}
 --- !u!4 &1107522222
 Transform:

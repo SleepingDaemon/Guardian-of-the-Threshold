@@ -15,3 +15,4 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 8617686c35cb1e6449501c0cdf88bfda, type: 3}
   Description: The Heavy Blue Duranium Helmet was carefully crafted from the armor
     of a parasitical beast.
+  MaxStackSize: 10

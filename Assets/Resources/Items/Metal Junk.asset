@@ -15,3 +15,4 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 8c1cc2c0e7bfab1488162f770078779e, type: 3}
   Description: Metal junk that can be used to construct valuable armor, tools, and
     weapons.
+  MaxStackSize: 10
